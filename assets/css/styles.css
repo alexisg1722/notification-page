@@ -1,0 +1,179 @@
+/* Core */
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+:root {
+  --color-blue: hsl(219, 85%, 26%);
+  --color-dark-grayish-blue: hsl(219, 12%, 42%);
+  --color-grayish-blue: hsl(219, 14%, 63%);
+  --color-light-grayish-blue-1: hsl(211, 68%, 94%);
+  --color-light-grayish-blue-2: hsl(205, 33%, 90%);
+  --color-red: hsl(1, 90%, 64%);
+  --color-very-dark-blue: hsl(224, 21%, 14%);
+  --color-very-light-grayish-blue: hsl(210, 60%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+/* General */
+
+.container {
+  align-items: center;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.badge-blue {
+  align-items: center;
+  background-color: var(--color-blue);
+  border-radius: 5px;
+  color: var(--color-white);
+  font-size: .8rem;
+  justify-content: center;
+  margin-left: .5rem;
+  padding: .2rem .5rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.color-dark {
+  color: var(--color-very-dark-blue);
+}
+
+.color-dark-gray {
+  color: var(--color-dark-grayish-blue);
+}
+
+.color-blue {
+  color: var(--color-blue);
+}
+
+/* Card notification header */
+
+.card-notification {
+  background-color: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 1px 1px 50px 1px var(--color-light-grayish-blue-2);
+  width: 650px;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .card-notification {
+    width: 500px;
+  }
+}
+
+.card-notification-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.card-notification-title {
+  font-weight: bold;
+}
+
+.card-notification-action {
+  font-weight: bold;
+  font-size: .8rem;
+  color: var(--color-grayish-blue);
+}
+
+/* Notification body */
+
+.card-notification-body {
+  display: grid;
+  gap: 1rem;
+}
+
+.notification {
+  border-radius: 10px;
+  display: flex;
+  font-size: .9rem;
+  padding: 1rem;
+}
+
+.notification.unread {
+  background-color: var(--color-light-grayish-blue-1);
+}
+
+.notification-avatar {
+  padding-right: 1rem;
+}
+
+.notification-avatar img {
+  width: 45px;
+  height: 45px;
+}
+
+.notification-body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.notification-description {
+  color: var(--color-grayish-blue);
+  font-weight: bold;
+}
+
+.notification-title {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.notification-icon {
+  background-color: var(--color-red);
+  border-radius: 100%;
+  display: inline-block;
+  height: 8px;
+  margin-left: .2rem;
+  width: 8px;
+}
+
+.notification-time {
+  color: var(--color-grayish-blue);
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.notification-preview img {
+  height: 45px;
+  width: 45px;
+}
+
+.notificacion-message {
+  border-radius: 5px;
+  border: 1px solid var(--color-light-grayish-blue-2);
+  margin-top: 10px;
+  padding: 1rem;
+}
+
+.attribution {
+  width: 100%;
+  font-size: 12px;
+  padding: 1rem;
+}
+
+.attribution a {
+  color: var(--color-blue);
+  font-weight: bold;
+}
